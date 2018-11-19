@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body background="leaves-pattern.png">
+    <h1>食品安全系统</h1>
+    <br> <label for="contractAddress">食品信息地址:</label> <input type="text" id="contractAddress" placeholder="Scan address or create a new contract"></input>
+    <br> <label for="locationId">位置ID:</label> <input type="text" id="locationId" placeholder="Enter the ID of the location"></input>
+    <br> <label for="locationName">位置名称:</label> <input type="text" id="locationName" placeholder="Location name"></input>
+    <br> <label for="secret">保密信息:</label> <input type="text" id="secret" placeholder="Enter secret"></input>
+    <br> <label for="passPhrase">密码:</label> <input type="text" id="passPhrase" placeholder="Enter or scan passphrase"></input>
+    <br> <label for="previousContractAddress">暂存地址:</label> <input type="text" id="previousContractAddress" placeholder="Optional"></input>
+
+    <br> <br>
+    <button id="createContract" onclick="App.createContract()">添加新食品</button>
+    
+    <button id="addNewLocation" onclick="App.addNewLocation()">添加食品位置信息</button>
+
+    <button id="getCurrentLocation" onclick="App.getCurrentLocation()">获取当前食品所有信息</button>
+    <br> <br>
+    <textarea id="textArea" rows="15" cols="100" ></textarea>
+</body>
+</html>
